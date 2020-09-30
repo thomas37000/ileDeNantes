@@ -8,13 +8,11 @@
 }
 
 .container {
-  width: 100%;
   margin: 1rem auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 750px);
 }
-
+/******* Effet Flou quand la souris passe sur l' image" ******/
 .bg,
 .overlay {
   text-align: center;
@@ -27,19 +25,20 @@ img,
   border-radius: 3px;
 }
 
+/*
+**pour que le h2 et le paragraph
+**reste au centre de l'image
+**position: relative
+*/
+
 .bg {
-  max-width: 50%;
-  /*pour que le h2 et le paragraph*/
-  /*reste au centre de l'image*/
+  width: 750px;
   position: relative;
-  margin: 0.5%;
 }
 
 .bg img {
   width: 750px;
   margin-bottom: -4px;
-  display: flex;
-  flex-direction: column;
 }
 
 .bg .overlay {
