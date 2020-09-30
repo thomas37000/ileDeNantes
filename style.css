@@ -1,6 +1,6 @@
 
 /* Polices */
-@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* tenu */
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* menu */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
 
@@ -13,91 +13,39 @@ body {
 
 }
 
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  margin: 1rem auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.bg,
-.overlay {
-  text-align: center;
-}
-
-img,
-.overlay {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  border-radius: 3px;
-}
-
-.bg {
-  max-width: 50%;
-  /*pour que le h2 et le paragraph*/
-  /*reste au centre de l'image*/
-  position: relative;
-  margin: 0.5%;
-}
-
-.bg img {
-  width: 750px;
-  margin-bottom: -4px;
+.scenes-ile {
   display: flex;
   flex-direction: column;
-}
-
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
+  
 }
 
-.bg .overlay h2 {
-  padding-top: 20%;
-  font-family: "Droid Serif", serif;
+.scenes-ile  h1 {
+  font-family: "Oswald";
+  text-align: center;
+  text-shadow: 3px 6px 3px gray;
+
 }
 
-.bg .overlay p {
-  font-family: "Julius Sans One", sans-serif;
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem;
+
 }
 
-.bg:hover .overlay {
-  opacity: 1;
+article img {
+  max-width: 100%;
+	height: auto;
 }
 
-.bg:hover img {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+article p {
+  font-family: "Piazzolla";
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 0em;
+  box-shadow: 0 2px 2px 0 black;
+
 }
 
-@media screen and (max-width: 1148px) {
-  .bg {
-    max-width: 48%;
-    margin: 1%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bg {
-    float: none;
-    max-width: 80%;
-    margin: 1% auto;
-  }
-}
