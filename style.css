@@ -14,64 +14,17 @@ body {
 }
 
 
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 750px);
-}
-/******* Effet Flou quand la souris passe sur l' image" ******/
-.bg,
-.overlay {
-  text-align: center;
-  text-shadow: 3px 6px 3px gray;
-
-
-/*
-**pour que le h2 et le paragraph
-**reste au centre de l'image
-**position: relative
-*/
-
-.bg {
-  width: 750px;
-  position: relative;
-}
-
-.bg img {
-  width: 750px;
-  margin-bottom: -4px;
-}
-
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
-}
-/* Début styles pages annexes */
+ /* Début styles pages annexes */ 
 .scenes-ile {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .scenes-ile  h1 {
   font-family: "Oswald";
+  text-align: center;
+  text-shadow: 3px 6px 3px gray;
 }
 
 article {
@@ -92,7 +45,5 @@ article p {
   border-color: black;
   margin: 0em;
   box-shadow: 0 2px 2px 0 black;
-
 }
 /* Fin styles pages annexes */
-
