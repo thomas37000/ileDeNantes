@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,49 @@
   <title>île de Nantes</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
     <section>
-          <img class="logo" src="img/logo nantes.png" alt="image des anneaux de nantes" width="120" height="100">
-          <img class="anneaux" src="img/anneaux.jpg" alt="image des anneaux de nantes" width="700" height="350">
+      <img class="logo" src="img/logo nantes.png" alt="logo d'un elephant">
     </section>
-
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-
-          <a href="musiques.html"><li>Culture</li></a>
-          <a href="musiques.html"><li>Musiques</li></a>
-          <a href="musiques.html"><li>Restaurants</li></a>
-          <a href="musiques.html"><li>Histoire</li></a>
+    <section class="headerright">
+    
+      <nav role="navigation">
+        <div id="menuToggle">
+          <img class="burger" src="img/Hamburger_icon.svg" alt="Logo">
           
-        </ul>
-      </div>
-    </nav>
+          <ul id="menu">
+
+            <a href="musiques.html">
+              <li>Culture</li>
+            </a>
+            <a href="musiques.html">
+              <li>Musiques</li>
+            </a>
+            <a href="musiques.html">
+              <li>Restaurants</li>
+            </a>
+            <a href="musiques.html">
+              <li>Histoire</li>
+            </a>
+
+          </ul>
+        </div>
+      </nav>
+    </section>
   </header>
 
   <h1 class="title1">Bienvenue sur l'île de Nantes</h1>
-  
+
   <section class="container">
     <div class="bg"><img src="img/les machines.jpg" alt="Culture">
       <div class="overlay">
-      <h2>Culture</h2>
-      <p>quoi visiter sur l' île de Nantes.</p>
+        <h2>Culture</h2>
+        <p>quoi visiter sur l' île de Nantes.</p>
+      </div>
     </div>
-  </div>
     <div class="bg"><img src="img/feralleuir.jpg" alt="Musique">
       <div class="overlay">
         <h2>Musique</h2>
@@ -59,7 +68,7 @@
         <h2>Histoire</h2>
         <p>Découvrez l' hsitoire de l' île de Nantes.</p>
       </div>
-    </div>   
+    </div>
   </section>
 
   <footer>
@@ -90,4 +99,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
