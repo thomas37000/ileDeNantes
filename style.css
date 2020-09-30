@@ -37,7 +37,7 @@
   border: 2px solid #39F99D; 
 }
 
-h1 {
+.title1 {
   color: #39F99D;
   letter-spacing: 10px; 
   text-align: center;
@@ -93,14 +93,38 @@ h1 {
   font-size: 25px;
 }
 
-.bg:hover .overlay {
-  opacity: 1;
+/* Début styles pages annexes */
+.scenes-ile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.bg:hover img {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+.scenes-ile  h1 {
+  font-family: "Oswald";
+
 }
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem;
+}
+
+article img {
+  max-width: 100%;
+	height: auto;
+}
+
+article p {
+  font-family: "Piazzolla";
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 0em;
+  box-shadow: 0 2px 2px 0 black;
+}
+/* Fin styles pages annexes */
 
 @media screen and (min-width: 1024px) {
 
@@ -115,5 +139,7 @@ h1 {
     border: 2px solid #39F99D; 
   }
 }
+
+
 
 
