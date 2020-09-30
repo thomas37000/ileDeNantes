@@ -100,3 +100,21 @@ img,
     margin: 1% auto;
   }
 }
+
+.headerright{
+  flex: 2;
+  background-image: url(img/image-header.png);
+  background-size: cover;
+  
+  
+}
+.anneaux{
+  width: 100%;
+}
+.logo{
+ position: relative;
+ top: 0px;
+ left: 0px;
+ 
+}
+
