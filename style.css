@@ -144,57 +144,66 @@ article p {
 /*
 CSS pour le footer
 */
-@media screen and (max-width: 768px) {
-  footer {
-    background-color: #242121;
-  }
+footer {
+  background-color: #242121;
+}
+
+footer > div > h2 {
+  font-family: "Oswald";
+  margin-bottom: .5em;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  .form-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
+}
+
+.child-container {
+  display: flex;
+  width: 96vw;
+  flex-direction: row-reverse;
+}
+
+.footer-title {
+  margin-bottom: 1em;
+  color: #fff;
+  padding: 0.7em;
+}
+
+form > div {
+  padding: .3em;
+}
+
+input, textarea {
+  padding: .3em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  opacity: 50%;
+  width: 96vw;
+  height: 4em;
+}
+
+textarea {
+  height: 8em;
+}
+
+button {
+  padding: .3em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  opacity: 50%;
+  width: 12em;
+  height: 4em;
+}
+
+@media screen and (min-width: 1024px) {
   
-  .child-container {
-    display: flex;
-    width: 97vw;
-    flex-direction: row-reverse;
-  }
-  
-  footer > h2, p {
-    margin-bottom: 1em;
-    color: #fff;
-    padding: 0.3em;
-  }
-  
-  form > div {
-    padding: .3em;
-  }
-  
-  input, textarea {
-    padding: .3em;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    background: #fff;
-    opacity: 50%;
-    width: 740px;
-    height: 4em;
-  }
-  
-  textarea {
-    height: 8em;
-  }
-  
-  button {
-    padding: .3em;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    background: #fff;
-    opacity: 50%;
-    width: 12em;
-    height: 4em;
-  }
+}
+
 .headerright{
   flex: 2;
   background-image: url(img/image-header.png);
@@ -206,8 +215,8 @@ CSS pour le footer
   width: 100%;
 }
 .logo{
- position: relative;
- top: 0px;
- left: 0px;
+  position: relative;
+  top: 0px;
+  left: 0px;
  
 }
