@@ -22,12 +22,14 @@
 
 
 .logo{
-  width: 30%;
+  width: 25%;
+  height: 90%;
 }
 
 .burger {
   position: absolute;
   right: 5vw;
+  width: 10%;
 
 }
 /*
@@ -142,6 +144,7 @@ button {
 
 
 @media screen and (min-width: 768px) {
+  
   /* Début media pages annexes */ 
 
 .scenes-ile {
