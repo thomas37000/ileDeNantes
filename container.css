@@ -28,12 +28,12 @@
 
 .title1 {
   color: #39F99D;
-  letter-spacing: 10px; 
   text-align: center;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
   
 .titleTop {
@@ -47,7 +47,7 @@
 }
 
 .bg img {
-  width: 95vw;
+  width: 100vw;
   height: auto;
   margin-bottom: -15px;
 }
@@ -57,10 +57,21 @@
   text-align: center;
 }
 
+.zic {
+  pointer-events: visible;
+}
+
 .bg .overlay h2 {
   font-family: "Oswald", serif;
   font-size: 3em;
   margin-top: 50px;
+  /***liens non valide pour l' instant***/
+  pointer-events: none;
+  cursor: default;
+}
+
+.bg .overlay h2 a{
+  color: #fff;
 }
 
 .bg .overlay p {
@@ -75,7 +86,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
@@ -90,11 +100,16 @@ img,
   height: 500px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
 
   .titleTop {
     width: 30%;
     border: 2px solid #39F99D; 
+  }
+
+  .title1 {
+    margin: 0;
+    letter-spacing: 10px;
   }
 
   .container {
@@ -104,6 +119,7 @@ img,
 
   .bg .overlay {
     opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .bg .overlay h2 {
