@@ -48,8 +48,9 @@
 
 .bg img {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   margin-bottom: -15px;
+  padding-bottom: 0.5em;
 }
 
 .bg,
@@ -65,9 +66,11 @@
   font-family: "Oswald", serif;
   font-size: 3em;
   margin-top: 50px;
+  padding-top: 10%;
   /***liens non valide pour l' instant***/
   pointer-events: none;
   cursor: default;
+
 }
 
 .bg .overlay h2 a{
