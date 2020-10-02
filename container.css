@@ -48,7 +48,7 @@
 
 .bg img {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   margin-bottom: -15px;
 }
 
@@ -97,10 +97,10 @@ img,
 }
 
 .histoire {
-  height: 500px;
+  height: 100vh;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
 
   .titleTop {
     width: 30%;
