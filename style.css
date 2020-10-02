@@ -303,3 +303,39 @@ body{
   background-color: black;
 }
 
+
+@media screen and (min-width: 768px) {
+  /* Début media pages annexes */ 
+
+.scenes-ile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.scenes-ile  h1 {
+  font-family: "Oswald";
+  text-align: center;
+  text-shadow: 3px 6px 3px gray;
+}
+
+article {
+  display: grid;
+  grid-column-gap: 1vw;
+  align-items: center;
+
+
+}
+
+article img {
+  max-width: 40vw;
+
+}
+
+
+article p {
+  grid-column: 2;
+}
+/* Fin styles pages annexes */
+
+}
