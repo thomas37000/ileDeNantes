@@ -9,22 +9,30 @@
 /* Début Header */
 
 
-.headerright{
-  flex: 2;
-  background-image: url(img/image-header.png);
+.image-header{
+  background-image: url("img/image-header.png");
+  display: flex;
   background-size: cover;
-  
-  
+  background-repeat: no-repeat; 
+
 }
 .anneaux{
   width: 100%;
+  position: relative;
+  
 }
 .logo{
  position: relative;
  top: 0px;
  left: 0px;
- 
+ width: 100px;
 }
+
+#menu{
+  visibility: hidden;
+  
+}
+
 
 /*Fin Header*/
 
@@ -285,19 +293,9 @@ button {
 }
 
 
-.headerright{
-  flex: 2;
-  background-image: url(img/image-header.png);
-  background-size: cover;
-  
-  
+
+
+body{
+  background-color: black;
 }
-.anneaux{
-  width: 100%;
-}
-.logo{
-  position: relative;
-  top: 0px;
-  left: 0px;
- 
-}
+
