@@ -1,178 +1,43 @@
-
 /* Polices */
 @import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* menu */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
 
-
-
 /* Début Header */
 
-
-.headerright{
+.headerright {
   flex: 2;
   background-image: url(img/image-header.png);
   background-size: cover;
-  
-  
 }
-.anneaux{
-  width: 100%;
+
+.image-header{
+  background-image: url("img/image-header.png");
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 20vw;
 }
+
+
 .logo{
- position: relative;
- top: 0px;
- left: 0px;
- 
+  width: 30%;
 }
+
+.burger {
+  position: absolute;
+  right: 5vw;
+
+}
+/*
+#menu{
+  visibility: hidden;
+}
+*/
 
 /*Fin Header*/
 
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-  
-.container {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: repeat(2, 750px);
-}
-  /******* Effet Flou quand la souris passe sur l' image" ******/
-
-  /*
-  **pour que le h2 et le paragraph
-  **reste au centre de l'image
-  **position: relative
-  */
-  
-.bg {
-  width: 750px;
-  position: relative;
-}
-  
-.bg img {
-  width: 750px;
-  margin-bottom: -4px;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-
-
-.headTitle {
-  height: 200px;
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleTop {
-  width: 70%;
-  border: 2px solid #39F99D; 
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
-}
-img,.overlay {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  border-radius: 3px;
-}
-
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
-}
-
-.bg .overlay h2 {
-  padding-top: 20%;
-  font-family: "Oswald", serif;
-  font-size: 3em;
-}
-
-.bg .overlay p {
-  font-family: "Piazzolla", sans-serif;
-  color: #39F99D;
-  font-size: 25px;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.headContainer .title1 {
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleTop {
-  width: 70%;
-  border: 2px solid #39F99D; 
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Début styles pages annexes */ 
 
@@ -186,44 +51,32 @@ img,.overlay {
   font-family: "Oswald";
   text-align: center;
   text-shadow: 3px 6px 3px gray;
+  font-size: 5vw;
 }
 
 article {
   display: flex;
   flex-direction: column;
   margin: 1.25rem;
+
 }
 
 article img {
   max-width: 100%;
-	height: auto;
+  height: auto;
 }
-
 
 article p {
   font-family: "Piazzolla";
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  margin: 0em;
+  margin: 0vw;
+  padding: 2vw;
   box-shadow: 0 2px 2px 0 black;
+  box-sizing: content-box;
 }
 /* Fin styles pages annexes */
-
-@media screen and (min-width: 1024px) {
-
-  .container {
-    /* margin: 1rem auto; */
-    display: grid;
-    grid-template-columns: repeat(2, 750px);
-  }
-
-  .titleTop {
-    width: 30%;
-    border: 2px solid #39F99D; 
-  }
-}
-
 
 /*
 CSS pour le footer
@@ -288,21 +141,43 @@ CSS pour le footer
 }
 
 
-.headerright{
-  flex: 2;
-  background-image: url(img/image-header.png);
-  background-size: cover;
-  
-  
-}
-.anneaux{
+
+
+
+@media screen and (min-width: 768px) {
+  /* Début media pages annexes */ 
+
+.scenes-ile {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
-.logo{
-  position: relative;
-  top: 0px;
-  left: 0px;
- 
+
+.scenes-ile  h1 {
+  font-family: "Oswald";
+  text-align: center;
+  text-shadow: 3px 6px 3px gray;
+}
+
+article {
+  display: grid;
+  grid-column-gap: 1vw;
+  align-items: center;
+
+
+}
+
+article img {
+  max-width: 40vw;
+
+}
+
+
+article p {
+  grid-column: 2;
+}
+/* Fin styles pages annexes */
+
 }
 
 @media screen and (min-width: 768px) {
