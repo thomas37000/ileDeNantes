@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
 
+html, body {
+  margin: 0;
+  padding: ;
+}
+
+
 /* Début Header */
 
 .image-header{
@@ -16,8 +22,8 @@
 
 
 .logo{
-  width: 25%;
-  height: 90%;
+  width: 25vw;
+  height: 19vw;
 }
 
 .burger {
