@@ -12,22 +12,22 @@
 .image-header{
   background-image: url("img/image-header.png");
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat; 
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 20vw;
+}
 
-}
-.anneaux{
-  width: 100%;
-  position: relative;
-  
-}
+
 .logo{
- position: relative;
- top: 0px;
- left: 0px;
- width: 100px;
+  width: 30%;
 }
 
+.burger {
+  position: absolute;
+  right: 5vw;
+
+}
 #menu{
   visibility: hidden;
   
@@ -298,10 +298,6 @@ button {
 
 
 
-
-body{
-  background-color: black;
-}
 
 
 @media screen and (min-width: 768px) {
