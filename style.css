@@ -228,60 +228,63 @@ article p {
 /*
 CSS pour le footer
 */
-footer {
-  background-color: #242121;
-}
 
-footer > div > h2 {
-  font-family: "Oswald";
-  margin-bottom: .5em;
-}
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: #242121;
+  }
 
-.form-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
+  footer > div > h2 {
+    font-family: "Oswald";
+    margin-bottom: .5em;
+  }
 
-.child-container {
-  display: flex;
-  width: 96vw;
-  flex-direction: row-reverse;
-}
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 
-.footer-title {
-  margin-bottom: 1em;
-  color: #fff;
-  padding: 0.7em;
-}
+  .child-container {
+    display: flex;
+    width: 93vw;
+    flex-direction: row-reverse;
+  }
 
-form > div {
-  padding: .3em;
-}
+  .footer-title {
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.7em;
+  }
 
-input, textarea {
-  padding: .3em;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  background: #fff;
-  opacity: 50%;
-  width: 96vw;
-  height: 4em;
-}
+  form > div {
+    padding: .3em;
+  }
 
-textarea {
-  height: 8em;
-}
+  input, textarea {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 93vw;
+    height: 4em;
+  }
 
-button {
-  padding: .3em;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  background: #fff;
-  opacity: 50%;
-  width: 12em;
-  height: 4em;
+  textarea {
+    height: 8em;
+  }
+
+  button {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 12em;
+    height: 4em;
+  }
 }
 
 
@@ -300,4 +303,59 @@ button {
   top: 0px;
   left: 0px;
  
+}
+
+@media screen and (min-width: 768px) {
+  footer { 
+    padding: 1em;
+    background-color: #242121;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer-title form-container form-container";
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .footer-title {
+    margin-bottom: 1em;
+    color: #fff;
+    grid-area: footer-title;
+  }
+
+  .form-container {
+    grid-area: form-container;
+  }
+
+  input {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 25vw;
+    height: 6vh;
+  }
+
+  textarea {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 25vw;
+    height: 15vh;
+  }
+
+  button {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 6vw;
+    height: 5vh;
+  }
 }
