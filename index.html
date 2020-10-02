@@ -7,6 +7,7 @@
 
   <title>île de Nantes</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="container.css">
 </head>
 
 <body>
@@ -44,7 +45,13 @@
     
   </header>
 
-  <h1 class="title1">Bienvenue sur l'île de Nantes</h1>
+  <div class="headContainer">
+    <div class="headTitle">
+      <span class="titleTop"></span>
+      <h1 class="title1">Bienvenue sur l'île de Nantes</h1>
+      <span class="titleTop"></span>
+    </div>
+  </div>
 
   <section class="container">
     <div class="bg"><img src="img/les machines.jpg" alt="Culture">
@@ -65,7 +72,7 @@
         <p>où manger sur l' île de Nantes.</p>
       </div>
     </div>
-    <div class="bg"><img src="img/photo.jpg" alt="Histoire">
+    <div class="bg"><img src="img/photo.jpg" alt="Histoire" class="histoire">
       <div class="overlay">
         <h2>Histoire</h2>
         <p>Découvrez l' hsitoire de l' île de Nantes.</p>
@@ -75,7 +82,7 @@
 
   <footer>
     <div class="footer-title">
-      <h2>Nous contacter :</h2>
+      <h2 class="contact">Nous contacter :</h2>
       <p>Jimmy Grenaille  //  Aymeric Lancien  //  Florian Pesset  //  Thomas Chalanson</p>
     </div>
     <form class="form-container">

@@ -1,188 +1,37 @@
-
 /* Polices */
 @import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* menu */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
 
-
-
 /* Début Header */
-
 
 .image-header{
   background-image: url("img/image-header.png");
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat; 
-  margin-top: 0px;
-  
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 20vw;
+}
 
-}
-.anneaux{
-  width: 100%;
-  position: relative;
-  
-}
+
 .logo{
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 100px;l
+  width: 30%;
 }
 
+.burger {
+  position: absolute;
+  right: 5vw;
+
+}
+/*
 #menu{
   visibility: hidden;
-  
 }
-
+*/
 
 /*Fin Header*/
 
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-  
-.container {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: repeat(2, 750px);
-}
-  /******* Effet Flou quand la souris passe sur l' image" ******/
-
-  /*
-  **pour que le h2 et le paragraph
-  **reste au centre de l'image
-  **position: relative
-  */
-  
-.bg {
-  width: 750px;
-  position: relative;
-}
-  
-.bg img {
-  width: 750px;
-  margin-bottom: -4px;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-
-
-.headTitle {
-  height: 200px;
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleTop {
-  width: 70%;
-  border: 2px solid #39F99D; 
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
-}
-img,.overlay {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  border-radius: 3px;
-}
-
-.bg .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  opacity: 0;
-}
-
-.bg .overlay h2 {
-  padding-top: 20%;
-  font-family: "Oswald", serif;
-  font-size: 3em;
-}
-
-.bg .overlay p {
-  font-family: "Piazzolla", sans-serif;
-  color: #39F99D;
-  font-size: 25px;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.headContainer .title1 {
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleTop {
-  width: 70%;
-  border: 2px solid #39F99D; 
-}
-
-.title1 {
-  color: #39F99D;
-  letter-spacing: 10px; 
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Début styles pages annexes */ 
 
@@ -211,7 +60,6 @@ article img {
   height: auto;
 }
 
-
 article p {
   font-family: "Piazzolla";
   border-width: 1px;
@@ -224,86 +72,70 @@ article p {
 }
 /* Fin styles pages annexes */
 
-@media screen and (min-width: 1024px) {
-
-  .container {
-    /* margin: 1rem auto; */
-    display: grid;
-    grid-template-columns: repeat(2, 750px);
-  }
-
-  .titleTop {
-    width: 30%;
-    border: 2px solid #39F99D; 
-  }
-}
-
-
 /*
 CSS pour le footer
 */
-footer {
-  background-color: #242121;
+
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: #242121;
+  }
+
+  footer > div > h2 {
+    font-family: "Oswald";
+    margin-bottom: .5em;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .child-container {
+    display: flex;
+    width: 93vw;
+    flex-direction: row-reverse;
+  }
+
+  .footer-title {
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.7em;
+  }
+
+  form > div {
+    padding: .3em;
+  }
+
+  input, textarea {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 93vw;
+    height: 4em;
+  }
+
+  textarea {
+    height: 8em;
+  }
+
+  button {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 12em;
+    height: 4em;
+  }
 }
 
-footer > div > h2 {
-  font-family: "Oswald";
-  margin-bottom: .5em;
-}
-
-.form-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.child-container {
-  display: flex;
-  width: 96vw;
-  flex-direction: row-reverse;
-}
-
-.footer-title {
-  margin-bottom: 1em;
-  color: #fff;
-  padding: 0.7em;
-}
-
-form > div {
-  padding: .3em;
-}
-
-input, textarea {
-  padding: .3em;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  background: #fff;
-  opacity: 50%;
-  width: 96vw;
-  height: 4em;
-}
-
-textarea {
-  height: 8em;
-}
-
-button {
-  padding: .3em;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  background: #fff;
-  opacity: 50%;
-  width: 12em;
-  height: 4em;
-}
 
 
-
-
-body{
-  background-color: black;
-}
 
 
 @media screen and (min-width: 768px) {
@@ -340,4 +172,59 @@ article p {
 }
 /* Fin styles pages annexes */
 
+}
+
+@media screen and (min-width: 768px) {
+  footer { 
+    padding: 1em;
+    background-color: #242121;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer-title form-container form-container";
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .footer-title {
+    margin-bottom: 1em;
+    color: #fff;
+    grid-area: footer-title;
+  }
+
+  .form-container {
+    grid-area: form-container;
+  }
+
+  input {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 25vw;
+    height: 6vh;
+  }
+
+  textarea {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 25vw;
+    height: 15vh;
+  }
+
+  button {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 6vw;
+    height: 5vh;
+  }
 }

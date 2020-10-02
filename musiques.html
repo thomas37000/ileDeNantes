@@ -10,27 +10,36 @@
 <body>
 
   <header>
-    <section>
-          <img class="logo" src="img/logo nantes.png" alt="image des anneaux de nantes" width="120" height="100">
-          <img class="anneaux" src="img/anneaux.jpg" alt="image des anneaux de nantes" width="700" height="350">
-    </section>
+    
+    <section class="image-header">
+    
+      <img class="logo" src="img/logo nantes.png" alt="logo d'un elephant">
+      
 
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-
-          <a href="musiques.html"><li>Culture</li></a>
-          <a href="musiques.html"><li>Musiques</li></a>
-          <a href="musiques.html"><li>Restaurants</li></a>
-          <a href="musiques.html"><li>Histoire</li></a>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <img class="burger" src="img/Hamburger_icon.svg" alt="Logo">
           
-        </ul>
-      </div>
-    </nav>
+          <ul id="menu">
+
+            <a href="musiques.html">
+              <li>Culture</li>
+            </a>
+            <a href="musiques.html">
+              <li>Musiques</li>
+            </a>
+            <a href="musiques.html">
+              <li>Restaurants</li>
+            </a>
+            <a href="musiques.html">
+              <li>Histoire</li>
+            </a>
+
+          </ul>
+        </div>
+      </nav>
+    </section>
+    
   </header>
   
 
@@ -72,26 +81,28 @@
   </section>
   
   <footer>
-    <h2>Nous contacter :</h2>
-    <p class="footer-texte">Jimmy Grenaille  //  Aymeric Lancien  //  Florian Pesset  //  Thomas Chalanson</p>
-    <form>
-      <div>
+    <div class="footer-title">
+      <h2 class="contact">Nous contacter :</h2>
+      <p>Jimmy Grenaille  //  Aymeric Lancien  //  Florian Pesset  //  Thomas Chalanson</p>
+    </div>
+    <form class="form-container">
+      <div class="child-container">
         <label for="last-name"></label>
-        <input type="text" id="last-name" value="Nom">
+        <input type="text" id="last-name" placeholder="Nom">
       </div>
-      <div>
+      <div class="child-container">
         <label for="first-name"></label>
-        <input type="text" id="first-name" value="Prénom">
+        <input type="text" id="first-name" placeholder="Prénom">
       </div>
-      <div>
+      <div class="child-container">
         <label for="mail"></label>
-        <input type="email" id="mail" value="Email">
+        <input type="email" id="mail" placeholder="Email">
       </div>
-      <div>
+      <div class="child-container">
         <label for="msg"></label>
         <textarea id="msg">Message...</textarea>
       </div>
-      <div>
+      <div class="child-container">
         <button type="submit">Envoyer</button>
       </div>
     </form>
