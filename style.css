@@ -14,11 +14,182 @@ body {
 }
 
 
- /* Début styles pages annexes */ 
+/* Début Header */
+
+
+.headerright{
+  flex: 2;
+  background-image: url(img/image-header.png);
+  background-size: cover;
+  
+  
+}
+.anneaux{
+  width: 100%;
+}
+.logo{
+ position: relative;
+ top: 0px;
+ left: 0px;
+ 
+}
+
+/*Fin Header*/
+
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+  
+.container {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 750px);
+}
+  /******* Effet Flou quand la souris passe sur l' image" ******/
+
+  /*
+  **pour que le h2 et le paragraph
+  **reste au centre de l'image
+  **position: relative
+  */
+  
+.bg {
+  width: 750px;
+  position: relative;
+}
+  
+.bg img {
+  width: 750px;
+  margin-bottom: -4px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headContainer {}
+
+.title1 {
+  color: #39F99D;
+  letter-spacing: 10px; 
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+
+
+.headTitle {
+  height: 200px;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleTop {
+  width: 70%;
+  border: 2px solid #39F99D; 
+}
+
+.title1 {
+  color: #39F99D;
+  letter-spacing: 10px; 
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 0;
+}
+img,.overlay {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 3px;
+}
+
+.bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 0;
+}
+
+.bg .overlay h2 {
+  padding-top: 20%;
+  font-family: "Oswald", serif;
+  font-size: 3em;
+}
+
+.bg .overlay p {
+  font-family: "Piazzolla", sans-serif;
+  color: #39F99D;
+  font-size: 25px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headContainer .title1 {
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleTop {
+  width: 70%;
+  border: 2px solid #39F99D; 
+}
+
+.title1 {
+  color: #39F99D;
+  letter-spacing: 10px; 
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Début styles pages annexes */ 
+
 .scenes-ile {
   display: flex;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
 }
 
 .scenes-ile  h1 {
@@ -38,6 +209,7 @@ article img {
 	height: auto;
 }
 
+
 article p {
   font-family: "Piazzolla";
   border-width: 1px;
@@ -47,3 +219,74 @@ article p {
   box-shadow: 0 2px 2px 0 black;
 }
 /* Fin styles pages annexes */
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    /* margin: 1rem auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 750px);
+  }
+
+  .titleTop {
+    width: 30%;
+    border: 2px solid #39F99D; 
+  }
+}
+
+
+/*
+CSS pour le footer
+*/
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: #242121;
+  }
+  
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .child-container {
+    display: flex;
+    width: 97vw;
+    flex-direction: row-reverse;
+  }
+  
+  footer > h2, .footer-texte {
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.3em;
+  }
+  
+  form > div {
+    padding: .3em;
+  }
+  
+  input, textarea {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 740px;
+    height: 4em;
+  }
+  
+  textarea {
+    height: 8em;
+  }
+  
+  button {
+    padding: .3em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 50%;
+    width: 12em;
+    height: 4em;
+  }
+}
