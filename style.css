@@ -186,17 +186,19 @@ img,.overlay {
   font-family: "Oswald";
   text-align: center;
   text-shadow: 3px 6px 3px gray;
+  font-size: 5vw;
 }
 
 article {
   display: flex;
   flex-direction: column;
   margin: 1.25rem;
+
 }
 
 article img {
   max-width: 100%;
-	height: auto;
+  height: auto;
 }
 
 
@@ -205,8 +207,10 @@ article p {
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  margin: 0em;
+  margin: 0vw;
+  padding: 2vw;
   box-shadow: 0 2px 2px 0 black;
+  box-sizing: content-box;
 }
 /* Fin styles pages annexes */
 
@@ -300,4 +304,41 @@ button {
   top: 0px;
   left: 0px;
  
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Début media pages annexes */ 
+
+.scenes-ile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.scenes-ile  h1 {
+  font-family: "Oswald";
+  text-align: center;
+  text-shadow: 3px 6px 3px gray;
+}
+
+article {
+  display: grid;
+  grid-column-gap: 1vw;
+  align-items: center;
+
+
+}
+
+article img {
+  max-width: 40vw;
+
+}
+
+
+article p {
+  grid-column: 2;
+}
+/* Fin styles pages annexes */
+
 }
