@@ -101,7 +101,8 @@ CSS pour le footer
 
   .child-container {
     display: flex;
-    width: 93vw;
+    width: 93vw; 
+    padding: .3em;
     flex-direction: row-reverse;
   }
 
@@ -109,10 +110,6 @@ CSS pour le footer
     margin-bottom: 1em;
     color: #fff;
     padding: 0.7em;
-  }
-
-  form > div {
-    padding: .3em;
   }
 
   input, textarea {
@@ -123,10 +120,14 @@ CSS pour le footer
     opacity: 50%;
     width: 93vw;
     height: 4em;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
   }
 
   textarea {
     height: 8em;
+    font-style: italic;
   }
 
   button {
@@ -137,6 +138,10 @@ CSS pour le footer
     opacity: 50%;
     width: 12em;
     height: 4em;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+    font-weight: bold;
   }
 }
 
@@ -185,9 +190,14 @@ article p {
     padding: 1em;
     background-color: #242121;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "footer-title form-container form-container";
+  }
+
+  .form-container {
+    display: grid;
+    grid-gap: 1vw;
   }
 
   .contact {
@@ -197,11 +207,11 @@ article p {
   .footer-title {
     margin-bottom: 1em;
     color: #fff;
-    grid-area: footer-title;
+    grid-column: 1 / 2;
   }
 
-  .form-container {
-    grid-area: form-container;
+  .area-desktop {
+    grid-column: 2 / 3;
   }
 
   input {
@@ -212,6 +222,10 @@ article p {
     opacity: 50%;
     width: 25vw;
     height: 6vh;
+    margin-bottom: 0.7vh;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
   }
 
   textarea {
@@ -222,6 +236,10 @@ article p {
     opacity: 50%;
     width: 25vw;
     height: 15vh;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+    font-style: italic;
   }
 
   button {
@@ -232,5 +250,10 @@ article p {
     opacity: 50%;
     width: 6vw;
     height: 5vh;
+    float: right;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+    font-weight: bold;
   }
 }
