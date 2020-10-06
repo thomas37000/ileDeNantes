@@ -60,7 +60,7 @@ CSS pour le footer
     background-color: #242121;
   }
 
-  footer > div > h2 {
+  .contact {
     font-family: "Oswald";
     margin-bottom: .5em;
   }
@@ -88,7 +88,7 @@ CSS pour le footer
   input, textarea {
     padding: .3em;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 15px;
     background: #fff;
     opacity: 50%;
     width: 93vw;
@@ -106,7 +106,7 @@ CSS pour le footer
   button {
     padding: .3em;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 30px;
     background: #fff;
     opacity: 50%;
     width: 12em;
@@ -164,6 +164,7 @@ CSS pour le footer
 
   .contact {
     margin-top: 0;
+    margin-bottom: .5em;
   }
 
   .footer-title {
@@ -179,7 +180,7 @@ CSS pour le footer
   input {
     padding: .3em;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 10px;
     background: #fff;
     opacity: 50%;
     width: 25vw;
@@ -188,12 +189,14 @@ CSS pour le footer
     box-shadow:inset 0 0 10px #000000;
     -moz-box-shadow:inset 0 0 10px #000000;
     -webkit-box-shadow:inset 0 0 10px #000000;
+    outline: none;
+    font-size: 16px;
   }
 
   textarea {
     padding: .3em;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 10px;
     background: #fff;
     opacity: 50%;
     width: 25vw;
@@ -202,12 +205,14 @@ CSS pour le footer
     -moz-box-shadow:inset 0 0 10px #000000;
     -webkit-box-shadow:inset 0 0 10px #000000;
     font-style: italic;
+    outline: none;
+    font-size: 16px;
   }
 
   button {
     padding: .3em;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 15px;
     background: #fff;
     opacity: 50%;
     width: 6vw;
@@ -217,6 +222,13 @@ CSS pour le footer
     -moz-box-shadow:inset 0 0 10px #000000;
     -webkit-box-shadow:inset 0 0 10px #000000;
     font-weight: bold;
+    outline: none;
+  }
+
+  .child-container:focus-within {
+    transition: all 0.2s ease-in;
+    transform: scale(1.05, 1.05);
+    opacity: 50%;
   }
 }
 

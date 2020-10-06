@@ -6,12 +6,9 @@
 
 .logo{
   width: 25vw;
-  height: 5vh;
 }
 
 nav {
-  width: 100vw;
-  /* display: none; */
   background: #000000;
 }
 
@@ -41,7 +38,6 @@ nav a {
   left: 50px;
   width: 100px;
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -49,7 +45,6 @@ nav a {
 #menuToggle a {
   text-decoration: none;
   color: #232323;
-  
   transition: color 0.3s ease;
 }
 
@@ -137,13 +132,14 @@ nav a {
     background-size: 100%, auto;  
   }
 
-  .nav {
+  nav {
     display: block;
+    padding-top: 45vh;
   }
 
   #menuToggle span, input {
     display: none;
-  }
+   } 
 
   .logo{
     width: auto;

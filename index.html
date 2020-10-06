@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="container.css">
   <link rel="stylesheet" href="darkmode.css">
   <link rel="stylesheet" href="nav.css">
+  
 </head>
 
 <body>
@@ -16,7 +17,7 @@
   <header>
   <section class="image-header">
 
-    <nav role="navigation">
+    <nav role="navigation" id="navDeck">
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -27,8 +28,6 @@
           <a href="index.html">
             <img class="logo" href="index.html" src="img/logo nantes.png" alt="logo d'un elephant" >
           </a>
-            
-          
           <a href="musiques.html">
             <li>Culture</li>
           </a>
@@ -108,7 +107,7 @@
           <textarea id="msg">Message...</textarea>
         </div>
         <div class="child-container">
-          <button type="submit">Envoyer</button>
+          <button type="submit" id="send">Envoyer</button>
         </div>
       </div>
     </form>
