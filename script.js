@@ -4,7 +4,7 @@
 const checkbox = document.getElementById("switch");
 const body = document.getElementsByTagName("body")[0];
 
-checkbox.addEventListener("change", () => {
+ checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     body.classList.add("dark-mode");
   } else {
@@ -12,3 +12,7 @@ checkbox.addEventListener("change", () => {
   }
 });
 
+document.querySelector("#send").addEventListener('click', function(event) {
+  event.preventDefault();
+  alert("Merci pour votre commentaire!");
+});
