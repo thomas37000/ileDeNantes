@@ -3,71 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
 
-html, body {
+html {
   margin: 0;
-}
-
-/* Début Header */
-
-.image-header{
-  background-image: url("img/image-header.png");
-  display: flex;
-  justify-content: space-between;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  height: 20vw;
-}
-
-.logo{
-  width: 25vw;
-  height: 5vh;
-}
-
-.burger {
-  position: absolute;
-  right: 5vw;
-  width: 10%;
 }
 
 body{
   padding: 0;
   margin: 0;
 }
-
-nav {
-  width: 100vw;
-  display: none;
-}
-
-nav ul{
-  list-style: none;
-  background: black;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #39F99D;
-  width: 100px;
-  display: inline-block;
-  padding: 2vw;
-  font-size: 18px;
-  font-family:"Coda";
-  margin-right: 100px;
-  text-transform: uppercase;
-}
-
-
-/*
-#menu{
-  visibility: hidden;
-}
-*/
-
-/*Fin Header*/
-
 
 /* Début styles pages annexes */ 
 
@@ -175,23 +118,8 @@ CSS pour le footer
   }
 }
 
-@media screen and (min-width: 768px) {
-  .image-header{
-    height: 20vh;
-    background-size: 100%, auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  nav {
-    display: block;
-  }
-
-  .logo{
-    width: auto;
-    height: 15vh;
-/* a partir d'ici JIMMY */
-  }
-
+@media screen and (min-width: 768px) 
+{
   /* Début media pages annexes */ 
 
   .scenes-ile {

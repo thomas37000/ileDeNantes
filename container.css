@@ -7,17 +7,12 @@
   padding: 0;
 }
 
-/* .headContainer .title1 {
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+/* .headContainer {
+  height: 20vh;
 } */
 
 .headTitle {
-  height: 200px;
+  height: 25vh;
   width: 100vw;
   background-color: #000;
   display: flex;
@@ -29,7 +24,7 @@
 .title1 {
   color: #39F99D;
   text-align: center;
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +108,7 @@ img,
   .title1 {
     margin: 0;
     letter-spacing: 10px;
+    height: 20vh;
   }
 
   .container {
