@@ -30,6 +30,31 @@ html, body {
   width: 10%;
 
 }
+body{
+  padding: 0;
+  margin: 0;
+}
+nav ul{
+  list-style: none;
+  background: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #39F99D;
+  width: 100px;
+  display: inline-block;
+  padding: 2vw;
+  font-size: 18px;
+  font-family:"Coda";
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+
+
 /*
 #menu{
   visibility: hidden;
@@ -75,6 +100,7 @@ article p {
   padding: 2vw;
   box-shadow: 0 2px 2px 0 black;
   box-sizing: content-box;
+  background-color: #fff ;
 }
 /* Fin styles pages annexes */
 
@@ -146,9 +172,6 @@ CSS pour le footer
 
 }
 
-
-
-
 @media screen and (min-width: 768px) {
   .image-header{
     height: 20vh;
@@ -157,7 +180,10 @@ CSS pour le footer
   .logo{
     width: 18vh;
     height: 18vh;
+/* a partir d'ici JIMMY */
+
   }
+
   /* Début media pages annexes */ 
 
   .scenes-ile {
