@@ -7,7 +7,6 @@ html, body {
   margin: 0;
 }
 
-
 /* Début Header */
 
 .image-header{
@@ -21,19 +20,25 @@ html, body {
 
 .logo{
   width: 25vw;
-  height: 19vw;
+  height: 5vh;
 }
 
 .burger {
   position: absolute;
   right: 5vw;
   width: 10%;
-
 }
+
 body{
   padding: 0;
   margin: 0;
 }
+
+nav {
+  width: 100vw;
+  display: none;
+}
+
 nav ul{
   list-style: none;
   background: black;
@@ -83,7 +88,6 @@ article {
   display: flex;
   flex-direction: column;
   margin: 1.25rem;
-
 }
 
 article img {
@@ -169,19 +173,23 @@ CSS pour le footer
     -webkit-box-shadow:inset 0 0 10px #000000;
     font-weight: bold;
   }
-
 }
 
 @media screen and (min-width: 768px) {
   .image-header{
     height: 20vh;
     background-size: 100%, auto;
+    display: flex;
+    justify-content: space-around;
   }
-  .logo{
-    width: 18vh;
-    height: 18vh;
-/* a partir d'ici JIMMY */
+  nav {
+    display: block;
+  }
 
+  .logo{
+    width: auto;
+    height: 15vh;
+/* a partir d'ici JIMMY */
   }
 
   /* Début media pages annexes */ 
@@ -202,13 +210,10 @@ CSS pour le footer
     display: grid;
     grid-column-gap: 1vw;
     align-items: center;
-
-
   }
 
   article img {
     max-width: 40vw;
-
   }
 
   article p {
