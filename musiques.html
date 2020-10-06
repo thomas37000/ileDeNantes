@@ -6,6 +6,7 @@
 
   <title>île de Nantes</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="darkmode.css">
 </head>
 <body>
 
@@ -39,7 +40,18 @@
   </header>
   
 
-  <section class="scenes-ile">
+  <section class="scenes-ile" id="musique">
+    <!-- <button id="darkMode" onclick="toggleDarkMode(this);" type="button">Dark Mode</button> -->
+
+    <div class="switch-container">
+      <p>Nantes Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="switch">
+        <span class="slider round"></span>
+      </label>
+    </div>
+      
+
     <h1>Scènes de l'île</h1>
 
     <article class="text-musique">
