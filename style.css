@@ -75,6 +75,7 @@ article p {
   padding: 2vw;
   box-shadow: 0 2px 2px 0 black;
   box-sizing: content-box;
+  background-color: #fff ;
 }
 
 .icone {
@@ -150,9 +151,6 @@ CSS pour le footer
   }
 
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .image-header{
