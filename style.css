@@ -87,7 +87,7 @@ CSS pour le footer
     background-color: #242121;
   }
 
-  footer > div > h2 {
+  .contact {
     font-family: "Oswald";
     margin-bottom: .5em;
   }
@@ -205,6 +205,7 @@ CSS pour le footer
 
   .contact {
     margin-top: 0;
+    margin-bottom: .5em;
   }
 
   .footer-title {
