@@ -9,7 +9,7 @@
 
 .dark-mode {
   filter: invert(1) hue-rotate(180deg);
-  background: url(./img/jaune.jpg);
+  background: url(./img/drapeau.jpg);
 }
 
 .switch {
