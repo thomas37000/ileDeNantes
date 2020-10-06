@@ -30,6 +30,31 @@ html, body {
   width: 10%;
 
 }
+body{
+  padding: 0;
+  margin: 0;
+}
+nav ul{
+  list-style: none;
+  background: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #39F99D;
+  width: 100px;
+  display: inline-block;
+  padding: 2vw;
+  font-size: 18px;
+  font-family:"Coda";
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+
+
 /*
 #menu{
   visibility: hidden;
@@ -157,7 +182,10 @@ CSS pour le footer
   .logo{
     width: 18vh;
     height: 18vh;
+/* a partir d'ici JIMMY */
+
   }
+
   /* Début media pages annexes */ 
 
   .scenes-ile {
