@@ -53,7 +53,10 @@ nav a {
   margin-right: 100px;
   text-transform: uppercase;
 }
-
+nav {
+  display: flex;
+  width: 100vw;
+}
 
 /*
 #menu{
