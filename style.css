@@ -76,6 +76,11 @@ article p {
   box-shadow: 0 2px 2px 0 black;
   box-sizing: content-box;
 }
+
+.icone {
+  max-width: 3vh;
+  max-height: 3em;
+}
 /* Fin styles pages annexes */
 
 /*
