@@ -130,7 +130,7 @@ nav a {
   }
 
   #menuToggle {
-    top: 230px;
+    top: 17vw;
   }
 
   #menuToggle a {
@@ -153,7 +153,6 @@ nav a {
     display: block;
     width: 100vw;
     padding: 0;
-    top: 20px;
     background: rgb(128,128,128);
     background: linear-gradient(180deg, rgba(128,128,128,0.1923144257703081) 0%, #39f99d 550%);
   }
