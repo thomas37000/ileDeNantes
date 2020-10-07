@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>île de Nantes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="container.css">
+  <link rel="stylesheet" href="darkmode.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="musiques.css">
+  <link rel="stylesheet" href="culture.css">
+
+
+</head>
+<body>
+
+  <section class="image-header">
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" class="nav-input" />
+        <span></span>
+        <span></span>
+        <span></span>
+       
+        <ul id="menu">
+          <a href="index.html">
+            <img class="logo" href="index.html" src="img/logo nantes.png" alt="logo d'un elephant" >
+          </a>  
+          <a href="culture.html">
+            <li>Culture</li>
+          </a>
+          <a href="musiques.html">
+            <li>Musiques</li>
+          </a>
+          <a href="musiques.html">
+            <li>Restaurants</li>
+          </a>
+          <a href="musiques.html">
+            <li>Histoire</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  </header>
+
+  <section id="culture">
+
+    <div class="switch-container">
+      <p>Nantes Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="switch">
+        <span class="slider round"></span>
+      </label>
+    </div>
+      
+
+    <h1>Éléments culturels</h1>
+    <p><q>Nantes est peut-être avec Paris la seule ville où peut m’arriver quelque chose qui en vaut la peine</q>, André Breton. </p>
+
+
+
+
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+
+                <img class="photo_carousel" src="https://www.lesmachines-nantes.fr/wp-content/uploads/2018/01/Le-Grand-Elephant-768x359.jpg">
+            </div>
+
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+                <img class="photo_carousel" src="https://www.lesmachines-nantes.fr/wp-content/uploads/2018/01/Le-Grand-Elephant-768x359.jpg">
+            </div>
+
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+                <img class="photo_carousel" src=https://www.lesmachines-nantes.fr/wp-content/uploads/2018/01/Le-Grand-Elephant-768x359.jpg>
+            </div>
+
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+                <img class="photo_carousel" src=https://www.lesmachines-nantes.fr/wp-content/uploads/2018/01/Le-Grand-Elephant-768x359.jpg>
+            </div>
+            
+
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"></a>
+            </li>
+            </ol>
+        </aside>
+        </section>
+      
+      
+
+
+
+  </section>
+
+  
+  <footer>
+    <div class="footer-title">
+      <h2 class="contact">Nous contacter :</h2>
+      <p>Jimmy Grenaille  //  Aymeric Lancien  //  Florian Pesset  //  Thomas Chalanson</p>
+    </div>
+    <form class="form-container">
+      <div class="input-desktop">
+        <div class="child-container">
+          <label for="last-name"></label>
+          <input type="text" id="last-name" class="footer-input" placeholder="Nom">
+        </div>
+        <div class="child-container">
+          <label for="first-name"></label>
+          <input type="text" id="first-name" class="footer-input" placeholder="Prénom">
+        </div>
+        <div class="child-container">
+          <label for="mail"></label>
+          <input type="email" id="mail" class="footer-input" placeholder="Email">
+        </div>
+      </div>
+      <div class="area-desktop">
+        <div class="child-container">
+          <label for="msg"></label>
+          <textarea id="msg">Message...</textarea>
+        </div>
+        <div class="child-container">
+          <button type="submit" id="send">Envoyer</button>
+        </div>
+      </div>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+  <script src="informations.js"></script>
+</body>
+</html>
