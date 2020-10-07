@@ -8,7 +8,7 @@ imageWarehouse.addEventListener('click', function(){
 
     } else {
         textWarehouse.style.display = "block";
-        imageWarehouse.style.transform = "rotate(0.99turn)";
+        imageWarehouse.style.transform = "rotate(0.01turn)";
     }
 });
 
@@ -22,7 +22,7 @@ imgFerrailleur.addEventListener('click', function(){
 
     } else {
         textFerrailleur.style.display = "block";
-        imgFerrailleur.style.transform = "rotate(-0.99turn)";
+        imgFerrailleur.style.transform = "rotate(-0.01turn)";
     }
 });
 
@@ -36,7 +36,7 @@ imgStereolux.addEventListener('click', function(){
 
     } else {
         textStereolux.style.display = "block";
-        imgStereolux.style.transform = "rotate(0.99turn)";
+        imgStereolux.style.transform = "rotate(0.01turn)";
 
     }
 });
@@ -51,7 +51,7 @@ imgTrempolino.addEventListener('click', function(){
 
     } else {
         textTrempolino.style.display = "block";
-        imgTrempolino.style.transform = "rotate(-0.99turn)";
+        imgTrempolino.style.transform = "rotate(-0.01turn)";
 
     }
 });
