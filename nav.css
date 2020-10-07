@@ -8,10 +8,6 @@
   width: 25vw;
 }
 
-/* nav {
-  background: #000000;
-} */
-
 nav ul {
   list-style: none;
   text-align: center;
@@ -34,8 +30,8 @@ nav a {
 #menuToggle {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 43px;
+  left: 30px;
   width: 100px;
   z-index: 1;
   -webkit-user-select: none;
@@ -49,7 +45,7 @@ nav a {
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color:#39F99D; 
 }
 
 #menuToggle .nav-input {
@@ -71,7 +67,7 @@ nav a {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background:#fff;
+  background:#39F99D;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -109,7 +105,7 @@ nav a {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #cdcdcd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -128,18 +124,47 @@ nav a {
 
 @media screen and (min-width: 768px) 
 {
-  .image-header{
-    background-size: 100%, auto;  
+  
+  nav a {
+    width: auto;
   }
 
-  nav {
-    display: block;
-    padding-top: 45vh;
+  #menuToggle {
+    top: 230px;
+  }
+
+  #menuToggle a {
+    color: #fff;
+  }
+  #menuToggle a:hover {
+    color: #39F99D;
   }
 
   #menuToggle span, .nav-input {
+
     display: none;
-   } 
+  }
+
+  #menuToggle input ~ ul {
+    transform: none;
+  }
+
+  #menu {
+    display: block;
+    width: 100vw;
+    padding: 0;
+    top: 20px;
+    background: rgb(128,128,128);
+    background: linear-gradient(180deg, rgba(128,128,128,0.1923144257703081) 0%, #39f99d 550%);
+  }
+
+  .image-header {
+    background-size: 100%, auto;  
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 0;
+  } 
 
   .logo{
     width: auto;
