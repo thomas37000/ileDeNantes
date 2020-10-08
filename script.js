@@ -1,3 +1,8 @@
+document.querySelector("#send").addEventListener('click', function(event) {
+  event.preventDefault();
+  alert("Merci d'avoir laissé un commentaire!");
+});
+
 /*** https://codepen.io/geoffctn/pen/zYqVreG ***/
 
 // script for dark mode handling
