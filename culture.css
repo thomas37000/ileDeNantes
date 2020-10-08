@@ -4,30 +4,36 @@
 
 .carousel{
   margin: 5vw;
-
 }
-
-h2 {
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
   text-align: center;
-  
+  color: #39F99D;
+}
+.card-text{
+  color: #39F99D;
+  text-justify: auto;
+
 }
 
 .carousel-items {
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  width: 100%;
+  overflow-x:  scroll;
+  scroll-snap-type: both mandatory;
+  scroll-padding-block: 0;
   font-family: "Piazzolla";
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  padding: 1vw;
   margin: 0vw;
-  box-shadow: 0 2px 2px 0 black;
+  box-shadow: 0 2px 2px 0 rgb(22, 22, 22);
   box-sizing: content-box;
-  background-color: #fff ;
-  text-justify: auto;
-
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+  font-size: 18px;
 
 }
 
@@ -36,15 +42,15 @@ h2 {
   scroll-snap-align: start;
   padding: 2vw;  
 
+
 }
 
 .carousel-image{
-  width: 100%;
-  height: 30%;
-  max-height: 50vw;
 
 }
 
 ul {
   list-style-type: none; 
+  
 }
+
