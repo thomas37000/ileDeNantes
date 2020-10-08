@@ -1,14 +1,38 @@
 .description {
   padding: 2vw;
+  font-family: "Piazzolla";
 }
 
-.description-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 4vh;
+@media screen and (max-width: 768px) {
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4vh;
+  }
+
+  .member-container {
+    margin-bottom: 7vh;
+    font-family: "Piazzolla";
+  }
 }
 
-.member-container {
-  margin-bottom: 7vh;
+@media screen and (min-width: 768px) {
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+  }
+  .member-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7vh;
+    font-family: "Piazzolla";
+  }
+  .member-description {
+    margin-left: 3vw;
+  }
+  .member-name {
+    margin-bottom: 1vh;
+  }
 }
