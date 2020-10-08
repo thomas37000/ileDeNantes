@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* menu */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
+
+
+
 .timeline {
     position: relative;
     margin: 0 auto;
@@ -16,7 +22,7 @@
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: #670dce;
+    background-color: #ffffff;
     border-radius: 100%;
     z-index: 2;
     border: 3px #000000 solid;
@@ -61,7 +67,7 @@
 
 .timeline ul li .content h3 {
     padding: 10px 20px;
-    background-color: #beb0b0;
+    background-color: #080808;
     margin-bottom: 0;
     text-align: center;
     border-top-left-radius: 10px;
@@ -92,4 +98,14 @@
     width: 3px;
     left: 50%;
     background-color: rgb(0, 0, 0);
+}
+h3{
+    font-family:"Coda";
+    color: white;
+}
+h4{
+    font-family:"Coda";
+}
+p{
+    font-family:"Coda";
 }
