@@ -10,7 +10,7 @@
 
 nav ul {
   list-style: none;
-  text-align: center;
+  text-align: right;
   padding: 0;
   margin: 0;
 }
@@ -114,8 +114,8 @@ nav a {
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: inherit;
+  font-size: 20px;
 }
 
 #menuToggle .nav-input:checked ~ ul {
@@ -124,13 +124,12 @@ nav a {
 
 @media screen and (min-width: 768px) 
 {
-  
   nav a {
     width: auto;
   }
 
   #menuToggle {
-    top: 17vw;
+    top: 16.8vw;
   }
 
   #menuToggle a {
@@ -141,7 +140,6 @@ nav a {
   }
 
   #menuToggle span, .nav-input {
-
     display: none;
   }
 
@@ -150,7 +148,7 @@ nav a {
   }
 
   #menu {
-    display: block;
+    display: flex;
     width: 100vw;
     padding: 0;
     background: rgb(128,128,128);
@@ -170,3 +168,5 @@ nav a {
     height: 10vh;
   }
 }
+
+
