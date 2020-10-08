@@ -90,6 +90,7 @@ CSS pour le footer
     grid-gap: 5vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    font-family: "Piazzolla";
   }
 
   .form-container {
@@ -100,6 +101,7 @@ CSS pour le footer
   .contact {
     margin-top: 0;
     margin-bottom: .5em;
+    font-family: "Oswald";
   }
 
   .footer-title {
