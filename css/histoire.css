@@ -29,7 +29,10 @@
     position: relative;
     left: 1px;
 }
-
+.point:hover {
+    min-width: 50px;
+    height: 50px;
+}
 .timeline ul li .content {
     width: 50%;
     padding: 0 20px;
