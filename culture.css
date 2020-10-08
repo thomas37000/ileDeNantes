@@ -45,12 +45,14 @@
 
 }
 
-.carousel-image{
 
-}
 
 ul {
   list-style-type: none; 
   
 }
+
+a:link { color: white; }          /* Liens non visités */
+a:visited { color: white; }     /* Liens visités */
+a:active { color: white; }         /* Liens actifs */
 
