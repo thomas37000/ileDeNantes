@@ -3,18 +3,25 @@
 *********************************/
 
 .carousel{
-  margin: 5vw;
+  margin-right: 11vw;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 2vw;
+
 }
 .card{
   display: flex;
   flex-direction: column;
+
 }
 .card-title {
   text-align: center;
-  color: #39F99D;
+  color: white;
+
 }
 .card-text{
-  color: #39F99D;
+  color: black;
+  background-color:#39F99D;;
   text-justify: auto;
 
 }
@@ -31,22 +38,25 @@
   margin: 0vw;
   box-shadow: 0 2px 2px 0 rgb(22, 22, 22);
   box-sizing: content-box;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(2, 1, 1);
   opacity: 0.9;
   font-size: 18px;
+  width: 75vw;
+  padding: 0vw;
+  border-radius: 1rem;
 
+  
 }
 
 .carousel-item {
   flex: 1 0 100%;
   scroll-snap-align: start;
-  padding: 2vw;  
-
-
+  padding: 1vw;  
+  max-width: 75vw;
 }
 
-
-
+.carousel-image{
+}
 ul {
   list-style-type: none; 
   
