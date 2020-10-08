@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-/* .headContainer {
-  height: 20vh;
-} */
-
 .headTitle {
   height: 25vh;
   width: 100vw;
@@ -53,19 +49,16 @@
   text-align: center;
 }
 
-.zic {
-  pointer-events: visible;
-}
-
 .bg .overlay h2 {
   font-family: "Oswald", serif;
   font-size: 3em;
   margin-top: 50px;
   padding-top: 10%;
-  /***liens non valide pour l' instant***/
-  pointer-events: none;
   cursor: default;
+}
 
+.resto {
+  pointer-events: none;
 }
 
 .bg .overlay h2 a{
