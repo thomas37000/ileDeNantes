@@ -1,0 +1,14 @@
+.description {
+  padding: 2vw;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4vh;
+}
+
+.member-container {
+  margin-bottom: 7vh;
+}
