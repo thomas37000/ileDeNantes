@@ -168,3 +168,7 @@ CSS pour le footer
   }
 }
 
+.about-us:link { color: white; }
+.about-us:visited { color: white; }
+.about-us:active { color: white; }
+
