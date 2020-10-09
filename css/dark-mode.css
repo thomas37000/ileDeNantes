@@ -11,7 +11,7 @@
 
 .dark-mode {
   filter: invert(1) hue-rotate(180deg);
-  background: url(/img/drapeau.jpg);
+  background: url(../img/drapeau.jpg);
 }
 
 .switch {
