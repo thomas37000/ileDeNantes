@@ -3,6 +3,14 @@
   font-family: "Piazzolla";
 }
 
+.picto {
+  width: 20px;
+}
+
+.members {
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .description-container {
     display: flex;
